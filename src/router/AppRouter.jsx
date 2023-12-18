@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import { CheckoutPage, OrderPage, ProductsPage } from "../pages";
 
 //Router de app, aqui van a estar todas las rutas de la app.
 export const router = createBrowserRouter([
@@ -8,5 +9,17 @@ export const router = createBrowserRouter([
         
         //Aqui cae cuando no existe ruta a la cual acceder.
         errorElement: <div><h1>Error element</h1></div>
+    },
+    {
+        path: "/products",
+        element: <ProductsPage />
+    },
+    {
+        path: "/checkout",
+        element: <CheckoutPage />
+    },
+    {
+        path: "/order",
+        element: <OrderPage />
     }
 ])
