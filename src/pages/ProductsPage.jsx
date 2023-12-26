@@ -1,5 +1,9 @@
+
 export const ProductsPage = () => {
+
   return (
-    <div>ProductsPage</div>
+    <>
+      <h1>Products Page</h1>
+    </>
   )
 }
